@@ -1,38 +1,109 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(
+    rgb(255, 255, 255),
+    rgb(255, 247, 228),
+    rgb(255, 220, 180),
+    rgb(255, 194, 159)
+  );
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.form input {
+  width: 300px;
+  height: 50px;
+  margin: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 16px;
+  border-radius: 15px;
+  border: 1px gray solid;
+  outline: none;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  width: 500px;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#updateInput {
+  width: 180px;
+  height: 30px;
+  background: white;
+  padding: 8px;
+  outline: none;
+}
+
+.deleteBtn{
+  background: rgb(255, 255, 255);
+  border: gray solid 1px;
+  border-radius: 15px;
+  height: 45px;
+  width: 90px;
+  color: rgb(148, 0, 0);
+}
+.deleteBtn:hover{
+  background: rgb(230, 230, 230);
+  border: gray solid 1px;
+  border-radius: 15px;
+  color: rgb(184, 0, 0);
+}
+
+.updateBtn{
+  background: rgb(255, 255, 255);
+  border: gray solid 1px;
+  border-radius: 15px;
+  height: 45px;
+  width: 90px;
+  color: rgb(0, 0, 0);
+}
+
+.updateBtn:hover{
+  background: rgb(230, 230, 230);
+  border: gray solid 1px;
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
+}
+
+.editInput{
+  border:none ;
+  background: none;
+  border-radius: 15px;
+}
+
+body {
+  margin: 0;
+}
+
+.postBtn{
+  background: rgb(255, 255, 255);
+  border: rgb(112, 112, 112) solid 1px;
+  border-radius: 15px;
+  height: 40px;
+  width: 140px;
+  color: rgb(48, 48, 48);
+  font-size: 20px;
+  padding: 9px;
+}
+
+.postBtn:hover{
+  background: rgb(233, 233, 233);
+  border: rgb(112, 112, 112) solid 1px;
+  border-radius: 15px;
+  height: 40px;
+  width: 140px;
+  color: rgb(48, 48, 48);
+  font-size: 20px;
 }
